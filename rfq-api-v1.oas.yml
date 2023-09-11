@@ -27,7 +27,7 @@ components:
       type: object
       properties:
         id:
-          type: integer
+          type: string
           format: uuid
         product:
           type: string
@@ -35,6 +35,7 @@ components:
           pattern: '(\w+\W*)*'
         quantity:
           type: integer
+          format: int32
           minimum: 0
           maximum: 1000
         price:
